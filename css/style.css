@@ -1,0 +1,206 @@
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    /*margin: 0;*/
+    font-size: 60pt;
+    /*background-color: rgba(255, 255, 255, 0);  #480c43;*/
+    /*color: #000;*/
+    padding: 0 50pt;
+    /*opacity: 0.1;*/
+}
+
+table {
+    width: 1200px;
+}
+
+th {
+    height: 175px;
+}
+
+/*td{
+    border: 2px solid #774F38;
+    width:300px;
+    height: 250px;
+}*/
+
+.tbtempclo1{
+    border: 2px solid #774F38;
+    width: 600px;
+    height: 125px;
+}
+
+.tbtempclo2{
+    border: 2px solid #774F38;
+    width:50px;
+    height: 125px;
+}
+
+.tbtempclo3{
+    border: 2px solid #774F38;
+    width:550px;
+    height: 125px;
+}
+
+.section {
+    text-align: center;
+}
+
+.clearFloat {
+    clear: both;
+}
+
+/*
+    section0
+    setting
+*/
+
+#section0 {
+    color: #fff;
+    font-size: 24pt;
+    text-align: center;
+
+}
+
+#settingBox,#deleteResultBox,#goToSlotBox {
+    margin: 0 auto;
+    text-align: left;
+    width:80%;
+    background: #333333;
+    padding:10pt;
+}
+
+#deleteResultBox,#goToSlotBox {
+    margin-top: 20pt;
+    padding:20pt;
+}
+
+#delete {
+    padding: 5pt;
+    background: #750303;
+}
+
+#settingBox div {
+    margin : 5pt;
+}
+
+.settingTitle {
+    display: inline-block;
+    width: 45%;
+}
+
+#randomEnd, #randomStart {
+    width: 80pt;
+}
+
+#updateSetting, #goToSlot {
+    display: block;
+    margin: 0 auto;
+}
+
+#deleteResultBtnBox {
+    float: right;
+}
+
+#randomEnd, #randomStart ,#updateSetting, #goToSlot, #sec {
+    color: #000;
+}
+
+
+/*
+    section1
+    result
+*/
+
+#resultBox {
+    width: 90%;
+    font-size:48pt;
+    margin: 0 auto;
+    text-align: center;
+    word-wrap:break-word;
+    overflow:hidden;
+}
+
+#resultBox div {
+    float:left;
+    width:15%;
+    text-align: center;
+}
+
+#section1 h2 {
+    color : #fff;
+    font-size:  72pt;
+}
+
+
+/*
+    section2
+    slot
+*/
+
+/*#section2 {
+    background-image: url("../img/123.jpg");
+}*/
+
+.jSlots-wrapper {
+    overflow: hidden;
+    height: 70pt;
+    display: inline-block; /* to size correctly, can use float too, or width*/
+    border: 0px solid #999;
+}
+
+.slot {
+    /*margin: 100px 150px 100px 50px;*/
+    float: left;
+    background: rgba(255, 255, 255, 0); /* none repeat scroll !important; rgba(0, 0, 0, 0.2) 前三個確定顏色，最後0.2確定透明度 */
+    /*實現FireFox背景透明，文字不透明*/
+    /*filter: Alpha(opacity=50);
+    實現IE背景透明,文字不透明*/
+
+}
+
+.fancy .jSlots-wrapper {
+    overflow: hidden;
+    height: 70px;
+    display: inline-block; /* to size correctly, can use float too, or width*/
+    border: 1px solid #999;
+}
+
+.fancy .slot li {
+    width: 80px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+}
+
+
+#box {
+    margin: 0 auto;
+    width: 1300px;
+    height: 950px;
+    background-image: url("../img/111.jpg");
+    overflow:hidden;
+}
+
+/*#box div {
+    margin : 5pt;
+    width: 1024pt;
+    height: 512pt;
+}*/
+
+#goBtn {
+    font-size: 50pt;
+    /*color: #fff;*/
+    /*background-color: #000;*/
+    /*background-image: url("../img/go.png");*/
+    padding:10pt;
+}
+
+a#goBtn, a#goBtn:link, a#goBtn:visited, a#goBtn:hover, a#goBtn:active{
+    color: #fff;
+    text-decoration: none;
+}
