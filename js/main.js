@@ -42,6 +42,9 @@ function deleteResult() {
     location.reload();
 }
 
+//<span style="font-size:8px;color:#3c77de;">✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿✿</span>
+
+
 $(document).ready(function(){
     
     // init
@@ -49,12 +52,12 @@ $(document).ready(function(){
     var resultArr = result == '' ? [] : result.split(",");
     slotInfo = {
         randomStart : $.cookie('randomStart') || 1
-        ,randomEnd : $.cookie('randomEnd') || 99999
+        ,randomEnd : $.cookie('randomEnd') || 99
         ,unique : $.cookie('unique') || 1
         ,sec : $.cookie('sec') || 5
         ,backgroundColor : $.cookie('backgroundColor') || '#050566'
         ,textColor : $.cookie('textColor') || '#ffff33'
-        ,textBackgroundColor : $.cookie('textBackgroundColor') || '#ffd6f8'
+        ,textBackgroundColor : $.cookie('textBackgroundColor') || '#ffb094'   //#ffbba6  //#ffd6f8 //color:#827ea6; //#ffae91;
         ,result : resultArr
     };
     
@@ -75,7 +78,7 @@ $(document).ready(function(){
 
     // update setting
     $('#updateSetting').click(function(){
-        var randomStart = 1,randomEnd = 99999,unique = 0,sec = 5;
+        var randomStart = 1,randomEnd = 99,unique = 0,sec = 5;
         var backgroundColor = '#050566';
         var textColor = '#ffff33';
         //var textBackgroundColor = '#000000';
@@ -89,7 +92,7 @@ $(document).ready(function(){
         if (randomStart > randomEnd) {
             randomEnd = randomStart * 1 + 1;
         }
-        randomEnd = (randomEnd > 99999) ? 99999 : randomEnd;
+        randomEnd = (randomEnd > 99) ? 99 : randomEnd;
         
         // unique slots
         unique = $('input[type="radio"][name="unique"]:checked').val() == 0 ? 0 : 1;
@@ -157,6 +160,7 @@ $(document).ready(function(){
             for (var i=0;i<numberLength;i++) {
                 tempObj[i] = numberStrToArr[i] == "0" ? 10 :numberStrToArr[i];
             }
+            console.log(tempObj);
             jsSlot.options.result = tempObj;
 
             $('#gogogo').click();
